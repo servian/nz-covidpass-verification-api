@@ -43,10 +43,9 @@ For online demo of this application click <a href="http://13.236.84.64:3000/" ta
 
 This project uses the following 4 libraries to decode and verify the pass:
 
-1. [Vue QR Code Reader](https://www.npmjs.com/package/vue-qrcode-reader): Detect and decode QR codes
-2. [Base32 Decode](https://www.npmjs.com/package/base32-decode): Base32 decoder with support for multiple variants.
-3. [CBOR](https://www.npmjs.com/package/cbor): Encode and parse data in the Concise Binary Object Representation (CBOR) data format
-4. [COSE](https://www.npmjs.com/package/cose-js): JavaScript implementation of [COSE](https://datatracker.ietf.org/doc/html/rfc8152), [RFC8152](https://datatracker.ietf.org/doc/html/rfc8152)
+1. [Base32 Decode](https://www.npmjs.com/package/base32-decode): Base32 decoder with support for multiple variants.
+2. [CBOR](https://www.npmjs.com/package/cbor): Encode and parse data in the Concise Binary Object Representation (CBOR) data format
+3. [COSE](https://www.npmjs.com/package/cose-js): JavaScript implementation of [COSE](https://datatracker.ietf.org/doc/html/rfc8152), [RFC8152](https://datatracker.ietf.org/doc/html/rfc8152)
 
 ## Requirements
 * `docker` (For serving the app for local development)
