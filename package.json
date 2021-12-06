@@ -1,8 +1,8 @@
 {
-  "name": "app",
+  "name": "nz-covidpass-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Verify a New Zealand Covid Pass API",
+  "author": "Andy Karwal",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
