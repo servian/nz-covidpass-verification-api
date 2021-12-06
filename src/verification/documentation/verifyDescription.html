@@ -1,0 +1,45 @@
+<h2>Verify a New Zealand Covid Pass</h2>
+
+<p>With this service you can scan, decode and view the cbor encoded json in your NZ Covid Pass which are not visible in
+    the standard application.</p>
+
+<p>An NZCP is constructed using the pattern:</p>
+
+<pre>
+<i>NZCP:/{version}/{base32-encoded-string}</i>
+</pre>
+
+<h3><strong>Checks performed</strong></h3>
+
+<p>This service also validates if the pass:</p>
+
+<ol>
+    <li>is a Base32 encoded NZCP Version 1</li>
+    <li>is encoded as a CBOR</li>
+    <li>has the correct protected headers</li>
+    <li>is issued by New Zealand Ministry of Health by matching the iss in the payload</li>
+    <li>is signed and validated by using the signature of the payload over the CBOR structure using the MOH public key</li>
+    <li>hasn&#39;t expired</li>
+    <li>is active</li>
+</ol>
+
+<h3><strong>Response</strong></h3>
+
+<p>If all of the above checks are valid then the <i>verified</i>&nbsp;boolean is set
+    to <i>true</i>, otherwise it will be classed as <i>false</i>.</p>
+
+<p>The following error messages are returned with status 200 if the verification fails:</p>
+<ul>
+  <li>unable to base32 decode</li>
+  <li>unable to decode cbor</li>
+  <li>unable to extract headers</li>
+  <li>pass expired</li>
+  <li>pass not yet active</li>
+  <li>unable to decode payload</li>
+  <li>unable to fetch authority DID</li>
+  <li>not a new zealand ministry of health trusted issuer</li>
+  <li>absolute key mismatch</li>
+  <li>verification method failure</li>
+  <li>elliptical signature verification failed</li>
+  <li>An unknown error occurred. Please contact the administrator with ref: kwoein4y</li>
+</ul>
