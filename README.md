@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# nz-covidpass-verification-api
-NZ COVID Pass Verification API
-=======
 # Verify a New Zealand Covid Pass API
 
 ## Overview
@@ -10,8 +6,8 @@ a microservice and integrated into your existing ecosystem.
 
 An NZCP is constructed using the pattern:
 
-NZCP:/{version}/{base32-encoded-string}
-Checks performed
+`NZCP:/{version}/{base32-encoded-string}`
+
 This service also validates if the pass:
 
 * is a Base32 encoded NZCP Version 1
@@ -22,9 +18,8 @@ This service also validates if the pass:
 * hasn't expired
 * is active
 
-
 ### Response
-If all of the above checks are valid then the verified boolean is set to true, otherwise it will be classed as false.
+If all the above checks are valid then the verified boolean is set to true, otherwise it will be classed as false.
 
 The following error messages are returned with status 200 if the verification fails:
 
@@ -95,4 +90,3 @@ Bad:
 
 Good:
 * `NZVA-123 - Add commit message guidelines to README`
->>>>>>> 203e897ff942f882bf0a888ef1d6f3647ea03b8c
