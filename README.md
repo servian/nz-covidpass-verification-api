@@ -41,7 +41,7 @@ For online demo of this application click <a href="http://13.236.84.64:3000/" ta
 
 ## Technical details
 
-This project uses the following 4 libraries to decode and verify the pass:
+This project uses the following libraries to decode and verify the pass:
 
 1. [Base32 Decode](https://www.npmjs.com/package/base32-decode): Base32 decoder with support for multiple variants.
 2. [CBOR](https://www.npmjs.com/package/cbor): Encode and parse data in the Concise Binary Object Representation (CBOR) data format
